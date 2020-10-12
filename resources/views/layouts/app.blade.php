@@ -35,13 +35,22 @@
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Library</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Log Out</a></li>
                 @endauth
             </ul>
         </nav>
         <div id="btn__grp">
-            <a href="{{ route('register') }}"><button>Register</button></a>
-            <a href="{{ route('login') }}"><button id="btn__login">Login</button></a>
+            @auth
+                <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();"><button id="btn__logout">Log Out</button></a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            @else
+                <a href="{{ route('register') }}"><button>Register</button></a>
+                <a href="{{ route('login') }}"><button id="btn__login">Login</button></a>
+            @endif
         </div>
     </header>
     <!-- End of Navigation Header -->
