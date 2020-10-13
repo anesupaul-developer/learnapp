@@ -59,6 +59,7 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <footer>Learn Laravel 7.0 &copy;&nbsp; 2020</footer>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

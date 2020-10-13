@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +19,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+Route::get('/students', [App\Http\Controllers\StudentsController::class, 'create']);
+Route::get('/students/list', [App\Http\Controllers\StudentsController::class, 'index']);
+Route::post('/students', [StudentsController::class, 'store']);
+Route::patch('/students/{student}', [StudentsController::class, 'update']);
+Route::delete('/students/{student}', [StudentsController::class, 'destroy']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

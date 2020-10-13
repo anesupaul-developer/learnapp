@@ -77,7 +77,8 @@ header div a #btn__logout {
 }
 
 .container {
-    margin-top: 5%;
+    margin-top: 2%;
+    background-color: #f9f9f9;
 }
 
 .container img {
@@ -97,4 +98,40 @@ footer {
     font-size: 13px;
     margin-top: 60px;
     justify-content: center;
+}
+
+.list-group li {
+    list-style: none;
+}
+
+.list-group li a {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #24252a;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-group li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.list-group li:hover {
+    background-color: #ccc;
+}
+
+#show_content h3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thead-student {
+    background-color: #112233;
+    color: #fff;
 }
