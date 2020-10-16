@@ -6,7 +6,7 @@
         <a href="/students/list">List Student</a>
     </li>
     <li class="list-group-item list-group-item-action">
-        <a href="#">Create New Book</a>
+        <a href="/books/create">Create New Book</a>
     </li>
     <li class="list-group-item list-group-item-action">
         <a href="#">Create Reservation</a>
