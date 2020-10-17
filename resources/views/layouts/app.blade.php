@@ -11,7 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    <link
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!-- Bootstrap CSS -->
@@ -21,6 +22,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400&family=Lato&family=Montserrat:wght@300;400;500&display=swap"
         rel="stylesheet">
+    <!-- Add Favicon -->
+    <link href="{{ asset('images/favicon.ico') }}" rel="icon"/>
     <!-- Linked stylesheet -->
 
     <!-- Styles -->

@@ -14,14 +14,14 @@ class BookTest extends TestCase
     public function can_create_a_book()
     {
         $this->withoutExceptionHandling();
-        $response = $this->post('/book', $this->bookdata());
+        $response = $this->post('/books', $this->book_data());
 
         $this->assertCount(1, Book::all());
         $response->assertStatus(302);
         $response->assertRedirect('/books');
     }
 
-    private function bookdata()
+    private function book_data()
     {
         return [
             'title' => 'Mufos Search',

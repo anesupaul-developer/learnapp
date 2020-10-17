@@ -19,6 +19,19 @@ a:hover {
     text-decoration: none;
 }
 
+a .check_in_link:hover{
+    text-decoration: none;
+} 
+
+.check_in_link{
+    color: #112233;
+}
+
+.check_in_link:hover{
+    text-decoration: none;
+    color: #81480f;
+}
+
 header h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;

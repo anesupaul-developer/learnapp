@@ -39,6 +39,10 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+
+        \App\Models\User::factory(3)->create();
+        \App\Models\Book::factory(10)->create();
+        \App\Models\Student::factory(5)->create();
     }
 
     /**
